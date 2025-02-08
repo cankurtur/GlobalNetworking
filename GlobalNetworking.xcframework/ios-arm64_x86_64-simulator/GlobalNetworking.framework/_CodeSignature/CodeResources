@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		knn7Ny3PS8/NM4+WU/oNtMdNIKI=
+		d6/5YlTcQfQ2WzPGyn0nBOi48tc=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IaxX9I2Eigam2TL0rVltDtb6gOk=
+		AREH+JEyzCFRYUBhP65yUMzx6sg=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		82LTc5EdZkSdGo+zAH11wDZjdAQ=
+		lrj/VIslG3VyBK8VNnfCAPUnNXw=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IaxX9I2Eigam2TL0rVltDtb6gOk=
+		AREH+JEyzCFRYUBhP65yUMzx6sg=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KJVckOwhJgK38Bv/jldh0le+awM=
+		NQAjVdkjoy8r0GAlNoA5eDGKpLw=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		knn7Ny3PS8/NM4+WU/oNtMdNIKI=
+		d6/5YlTcQfQ2WzPGyn0nBOi48tc=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Z0/LjfqMb2GDp8VXwZ793iqo8/8=
+		Lcpnf2WcdCcltQD3GKlnlg9R3J8=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ScwAbAEPZ+tTgRtnwZwHyBw9b2o=
+		10bxrw9HR4d+i1dN/K7ClP/3GC0=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Z0/LjfqMb2GDp8VXwZ793iqo8/8=
+		Lcpnf2WcdCcltQD3GKlnlg9R3J8=
 		</data>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4slkiktC0rodPvXaTcG9LvpQZmo=
+		en3bCh4qXMMOL92v/StbJqNQtDc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dg7dijDkZT6h2KsmZr2OSMulY3WXYoIqZumM1x3GpMc=
+			vcbNvW+wzViu/sga0apSSqOINyZ7a+aeVIv7ZKo7AJM=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			papCCSaiUVL9uBUgNSawzfWetYRKA5iOLhSDc4yN39E=
+			wvNvEo77WWVtfeAsi+t9CmJkntgWzq8XH+AUZuU+SXQ=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JZJbOt0BbpSSwJAd1SfwVm8MmQ742cnvWCTkYuS6Af8=
+			aidTIgeDzyM1T1dGSURzaw7WegtKgC5Go3+KbsUN2PU=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			papCCSaiUVL9uBUgNSawzfWetYRKA5iOLhSDc4yN39E=
+			wvNvEo77WWVtfeAsi+t9CmJkntgWzq8XH+AUZuU+SXQ=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s9qOJSZx7brOEhBrrZNhFu7fgJE50UVmiWeXufHIQjw=
+			sXCvmqY29lRYk6qTXJ1/2GAiIt8uK32ixWSiYR3XL10=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dg7dijDkZT6h2KsmZr2OSMulY3WXYoIqZumM1x3GpMc=
+			vcbNvW+wzViu/sga0apSSqOINyZ7a+aeVIv7ZKo7AJM=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VKgZWCs9ZPebtqMHv3+ULUWcHtaQT8bqy8BnGGQpMAA=
+			/QZtVh0OHb0sorTQaApdMGNpk1LDKicEZnQhyDR8qUI=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/QuL4gr49BKUzWvBwQn2kRJlrGWeYOTczEuoVedoVP4=
+			ge2v0H8r34kOrdqhyINYUKUqjdUmOpu7xFpIGQcKIjw=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VKgZWCs9ZPebtqMHv3+ULUWcHtaQT8bqy8BnGGQpMAA=
+			/QZtVh0OHb0sorTQaApdMGNpk1LDKicEZnQhyDR8qUI=
 			</data>
 		</dict>
 		<key>Modules/GlobalNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uPE3qyXRdRnzRUfrZbWrb7a7/JY35Z9YsFUWZNT7jf8=
+			WQATqLfb1S182fdXm5w1nyLKeK1tZy9bcyxpOEjrOm4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
