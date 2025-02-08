@@ -43,7 +43,7 @@ public final class NetworkManager<EndpointItem: Endpoint> {
         clientErrorType: APIError.Type,
         errorStatusCodesToTrack: [Int] = [],
         errorStatusCodeHandler: ErrorStatusCodeHandler? = nil,
-        logger: NetworkLoggerProtocol,
+        logger: NetworkLoggerProtocol = NetworkLogger(),
         successStatusCodes: ClosedRange<Int> = 200...209
     ) {
         self.session = session
