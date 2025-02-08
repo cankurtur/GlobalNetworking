@@ -8,6 +8,39 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.log
+import os
+final public class NetworkLogger : GlobalNetworking.NetworkLoggerProtocol {
+  public init()
+  final public func logCurlString(_ urlRequest: Foundation.URLRequest?)
+  final public func logRequest(_ endpoint: any GlobalNetworking.Endpoint)
+  final public func logResponse(_ responseLogging: GlobalNetworking.ResponseLogging)
+  @objc deinit
+}
+public protocol NetworkLoggerProtocol {
+  func logCurlString(_ urlRequest: Foundation.URLRequest?)
+  func logRequest(_ endpoint: any GlobalNetworking.Endpoint)
+  func logResponse(_ responseLogging: GlobalNetworking.ResponseLogging)
+}
+public enum ResponseLogging {
+  case success(data: Foundation.Data, endpoint: any GlobalNetworking.Endpoint)
+  case failure(reason: Swift.String, endpoint: any GlobalNetworking.Endpoint, data: Foundation.Data? = nil)
+}
+final public class NetworkManager<EndpointItem> where EndpointItem : GlobalNetworking.Endpoint {
+  public init(session: Foundation.URLSession = URLSession.shared, timeoutInterval: Foundation.TimeInterval = 10, clientErrorType: any GlobalNetworking.APIError.Type, errorStatusCodesToTrack: [Swift.Int] = [], errorStatusCodeHandler: GlobalNetworking.ErrorStatusCodeHandler? = nil, logger: any GlobalNetworking.NetworkLoggerProtocol = NetworkLogger(), successStatusCodes: Swift.ClosedRange<Swift.Int> = 200...209)
+  @objc deinit
+}
+extension GlobalNetworking.NetworkManager : GlobalNetworking.NetworkManagerProtocol {
+  final public func request<T>(endpoint: EndpointItem, responseType: T.Type) -> Combine.AnyPublisher<T, GlobalNetworking.APIClientError> where T : Swift.Decodable
+  final public func request<T>(endpoint: EndpointItem, responseType: T.Type) async throws -> T where T : Swift.Decodable
+  final public func request<T>(endpoint: EndpointItem, responseType: T.Type, completion: @escaping GlobalNetworking.NetworkHandler<T>) where T : Swift.Decodable
+}
+public protocol NetworkManagerProtocol {
+  associatedtype EndpointItem : GlobalNetworking.Endpoint
+  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) -> Combine.AnyPublisher<T, GlobalNetworking.APIClientError> where T : Swift.Decodable
+  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) async throws -> T where T : Swift.Decodable
+  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type, completion: @escaping GlobalNetworking.NetworkHandler<T>) where T : Swift.Decodable
+}
 public protocol Endpoint : Swift.CustomStringConvertible {
   var baseUrl: Swift.String { get }
   var path: Swift.String { get }
@@ -49,30 +82,6 @@ public enum APIClientError : Swift.Error {
   public var statusCode: Swift.Int {
     get
   }
-}
-public protocol NetworkLoggerProtocol {
-  func logCurlString(_ urlRequest: Foundation.URLRequest?)
-  func logRequest(_ endpoint: any GlobalNetworking.Endpoint)
-  func logResponse(_ responseLogging: GlobalNetworking.ResponseLogging)
-}
-public enum ResponseLogging {
-  case success(data: Foundation.Data, endpoint: any GlobalNetworking.Endpoint)
-  case failure(reason: Swift.String, endpoint: any GlobalNetworking.Endpoint, data: Foundation.Data? = nil)
-}
-final public class NetworkManager<EndpointItem> where EndpointItem : GlobalNetworking.Endpoint {
-  public init(session: Foundation.URLSession = URLSession.shared, timeoutInterval: Foundation.TimeInterval = 10, clientErrorType: any GlobalNetworking.APIError.Type, errorStatusCodesToTrack: [Swift.Int] = [], errorStatusCodeHandler: GlobalNetworking.ErrorStatusCodeHandler? = nil, logger: any GlobalNetworking.NetworkLoggerProtocol, successStatusCodes: Swift.ClosedRange<Swift.Int> = 200...209)
-  @objc deinit
-}
-extension GlobalNetworking.NetworkManager : GlobalNetworking.NetworkManagerProtocol {
-  final public func request<T>(endpoint: EndpointItem, responseType: T.Type) -> Combine.AnyPublisher<T, GlobalNetworking.APIClientError> where T : Swift.Decodable
-  final public func request<T>(endpoint: EndpointItem, responseType: T.Type) async throws -> T where T : Swift.Decodable
-  final public func request<T>(endpoint: EndpointItem, responseType: T.Type, completion: @escaping GlobalNetworking.NetworkHandler<T>) where T : Swift.Decodable
-}
-public protocol NetworkManagerProtocol {
-  associatedtype EndpointItem : GlobalNetworking.Endpoint
-  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) -> Combine.AnyPublisher<T, GlobalNetworking.APIClientError> where T : Swift.Decodable
-  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) async throws -> T where T : Swift.Decodable
-  func request<T>(endpoint: Self.EndpointItem, responseType: T.Type, completion: @escaping GlobalNetworking.NetworkHandler<T>) where T : Swift.Decodable
 }
 public enum ParameterEncoding {
   case url

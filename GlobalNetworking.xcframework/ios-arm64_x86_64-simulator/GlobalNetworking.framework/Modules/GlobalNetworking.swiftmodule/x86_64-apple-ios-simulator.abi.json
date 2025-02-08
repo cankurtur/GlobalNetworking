@@ -15,6 +15,1073 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkLogger",
+        "printedName": "NetworkLogger",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkLogger",
+                "printedName": "GlobalNetworking.NetworkLogger",
+                "usr": "s:16GlobalNetworking13NetworkLoggerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GlobalNetworking13NetworkLoggerCACycfc",
+            "mangledName": "$s16GlobalNetworking13NetworkLoggerCACycfc",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "logCurlString",
+            "printedName": "logCurlString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking13NetworkLoggerC13logCurlStringyy10Foundation10URLRequestVSgF",
+            "mangledName": "$s16GlobalNetworking13NetworkLoggerC13logCurlStringyy10Foundation10URLRequestVSgF",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logRequest",
+            "printedName": "logRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "any GlobalNetworking.Endpoint",
+                "usr": "s:16GlobalNetworking8EndpointP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking13NetworkLoggerC10logRequestyyAA8Endpoint_pF",
+            "mangledName": "$s16GlobalNetworking13NetworkLoggerC10logRequestyyAA8Endpoint_pF",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logResponse",
+            "printedName": "logResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ResponseLogging",
+                "printedName": "GlobalNetworking.ResponseLogging",
+                "usr": "s:16GlobalNetworking15ResponseLoggingO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking13NetworkLoggerC11logResponseyyAA0F7LoggingOF",
+            "mangledName": "$s16GlobalNetworking13NetworkLoggerC11logResponseyyAA0F7LoggingOF",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16GlobalNetworking13NetworkLoggerC",
+        "mangledName": "$s16GlobalNetworking13NetworkLoggerC",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkLoggerProtocol",
+            "printedName": "NetworkLoggerProtocol",
+            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP",
+            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkLoggerProtocol",
+        "printedName": "NetworkLoggerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "logCurlString",
+            "printedName": "logCurlString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP13logCurlStringyy10Foundation10URLRequestVSgF",
+            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP13logCurlStringyy10Foundation10URLRequestVSgF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
+            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logRequest",
+            "printedName": "logRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "any GlobalNetworking.Endpoint",
+                "usr": "s:16GlobalNetworking8EndpointP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP10logRequestyyAA8Endpoint_pF",
+            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP10logRequestyyAA8Endpoint_pF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
+            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logResponse",
+            "printedName": "logResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ResponseLogging",
+                "printedName": "GlobalNetworking.ResponseLogging",
+                "usr": "s:16GlobalNetworking15ResponseLoggingO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP11logResponseyyAA0G7LoggingOF",
+            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP11logResponseyyAA0G7LoggingOF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
+            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP",
+        "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ResponseLogging",
+        "printedName": "ResponseLogging",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GlobalNetworking.ResponseLogging.Type) -> (Foundation.Data, any GlobalNetworking.Endpoint) -> GlobalNetworking.ResponseLogging",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, any GlobalNetworking.Endpoint) -> GlobalNetworking.ResponseLogging",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseLogging",
+                        "printedName": "GlobalNetworking.ResponseLogging",
+                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(data: Foundation.Data, endpoint: any GlobalNetworking.Endpoint)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "any GlobalNetworking.Endpoint",
+                            "usr": "s:16GlobalNetworking8EndpointP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GlobalNetworking.ResponseLogging.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseLogging",
+                        "printedName": "GlobalNetworking.ResponseLogging",
+                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GlobalNetworking15ResponseLoggingO7successyAC10Foundation4DataV_AA8Endpoint_ptcACmF",
+            "mangledName": "$s16GlobalNetworking15ResponseLoggingO7successyAC10Foundation4DataV_AA8Endpoint_ptcACmF",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GlobalNetworking.ResponseLogging.Type) -> (Swift.String, any GlobalNetworking.Endpoint, Foundation.Data?) -> GlobalNetworking.ResponseLogging",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, any GlobalNetworking.Endpoint, Foundation.Data?) -> GlobalNetworking.ResponseLogging",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseLogging",
+                        "printedName": "GlobalNetworking.ResponseLogging",
+                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String, endpoint: any GlobalNetworking.Endpoint, data: Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "any GlobalNetworking.Endpoint",
+                            "usr": "s:16GlobalNetworking8EndpointP"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GlobalNetworking.ResponseLogging.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseLogging",
+                        "printedName": "GlobalNetworking.ResponseLogging",
+                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GlobalNetworking15ResponseLoggingO7failureyACSS_AA8Endpoint_p10Foundation4DataVSgtcACmF",
+            "mangledName": "$s16GlobalNetworking15ResponseLoggingO7failureyACSS_AA8Endpoint_p10Foundation4DataVSgtcACmF",
+            "moduleName": "GlobalNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16GlobalNetworking15ResponseLoggingO",
+        "mangledName": "$s16GlobalNetworking15ResponseLoggingO",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManager",
+        "printedName": "NetworkManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(session:timeoutInterval:clientErrorType:errorStatusCodesToTrack:errorStatusCodeHandler:logger:successStatusCodes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkManager",
+                "printedName": "GlobalNetworking.NetworkManager<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:16GlobalNetworking14NetworkManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any GlobalNetworking.APIError.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIError",
+                    "printedName": "GlobalNetworking.APIError",
+                    "usr": "s:16GlobalNetworking8APIErrorP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkLoggerProtocol",
+                "printedName": "any GlobalNetworking.NetworkLoggerProtocol",
+                "hasDefaultArg": true,
+                "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClosedRange",
+                "printedName": "Swift.ClosedRange<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SN"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
+            "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, GlobalNetworking.APIClientError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIClientError",
+                    "printedName": "GlobalNetworking.APIClientError",
+                    "usr": "s:16GlobalNetworking14APIClientErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_1_0, GlobalNetworking.APIClientError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_1_0, GlobalNetworking.APIClientError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIClientError",
+                        "printedName": "GlobalNetworking.APIClientError",
+                        "usr": "s:16GlobalNetworking14APIClientErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16GlobalNetworking14NetworkManagerC",
+        "mangledName": "$s16GlobalNetworking14NetworkManagerC",
+        "moduleName": "GlobalNetworking",
+        "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
+        "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkManagerProtocol",
+            "printedName": "NetworkManagerProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EndpointItem",
+                "printedName": "EndpointItem",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManagerProtocol",
+        "printedName": "NetworkManagerProtocol",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "EndpointItem",
+            "printedName": "EndpointItem",
+            "declKind": "AssociatedType",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
+            "moduleName": "GlobalNetworking",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, GlobalNetworking.APIClientError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIClientError",
+                    "printedName": "GlobalNetworking.APIClientError",
+                    "usr": "s:16GlobalNetworking14APIClientErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.EndpointItem"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.EndpointItem"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:responseType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.EndpointItem"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_1_0, GlobalNetworking.APIClientError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_1_0, GlobalNetworking.APIClientError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIClientError",
+                        "printedName": "GlobalNetworking.APIClientError",
+                        "usr": "s:16GlobalNetworking14APIClientErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
+        "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP",
+        "moduleName": "GlobalNetworking",
+        "genericSig": "<τ_0_0.EndpointItem : GlobalNetworking.Endpoint>",
+        "sugared_genericSig": "<Self.EndpointItem : GlobalNetworking.Endpoint>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Endpoint",
         "printedName": "Endpoint",
@@ -1233,891 +2300,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GlobalNetworking",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkLoggerProtocol",
-        "printedName": "NetworkLoggerProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "logCurlString",
-            "printedName": "logCurlString(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URLRequest?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URLRequest",
-                    "printedName": "Foundation.URLRequest",
-                    "usr": "s:10Foundation10URLRequestV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP13logCurlStringyy10Foundation10URLRequestVSgF",
-            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP13logCurlStringyy10Foundation10URLRequestVSgF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
-            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logRequest",
-            "printedName": "logRequest(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Endpoint",
-                "printedName": "any GlobalNetworking.Endpoint",
-                "usr": "s:16GlobalNetworking8EndpointP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP10logRequestyyAA8Endpoint_pF",
-            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP10logRequestyyAA8Endpoint_pF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
-            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logResponse",
-            "printedName": "logResponse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ResponseLogging",
-                "printedName": "GlobalNetworking.ResponseLogging",
-                "usr": "s:16GlobalNetworking15ResponseLoggingO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP11logResponseyyAA0G7LoggingOF",
-            "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP11logResponseyyAA0G7LoggingOF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.NetworkLoggerProtocol>",
-            "sugared_genericSig": "<Self where Self : GlobalNetworking.NetworkLoggerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP",
-        "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP",
-        "moduleName": "GlobalNetworking",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ResponseLogging",
-        "printedName": "ResponseLogging",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "success",
-            "printedName": "success",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GlobalNetworking.ResponseLogging.Type) -> (Foundation.Data, any GlobalNetworking.Endpoint) -> GlobalNetworking.ResponseLogging",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Foundation.Data, any GlobalNetworking.Endpoint) -> GlobalNetworking.ResponseLogging",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResponseLogging",
-                        "printedName": "GlobalNetworking.ResponseLogging",
-                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(data: Foundation.Data, endpoint: any GlobalNetworking.Endpoint)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Data",
-                            "printedName": "Foundation.Data",
-                            "usr": "s:10Foundation4DataV"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Endpoint",
-                            "printedName": "any GlobalNetworking.Endpoint",
-                            "usr": "s:16GlobalNetworking8EndpointP"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GlobalNetworking.ResponseLogging.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResponseLogging",
-                        "printedName": "GlobalNetworking.ResponseLogging",
-                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16GlobalNetworking15ResponseLoggingO7successyAC10Foundation4DataV_AA8Endpoint_ptcACmF",
-            "mangledName": "$s16GlobalNetworking15ResponseLoggingO7successyAC10Foundation4DataV_AA8Endpoint_ptcACmF",
-            "moduleName": "GlobalNetworking"
-          },
-          {
-            "kind": "Var",
-            "name": "failure",
-            "printedName": "failure",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GlobalNetworking.ResponseLogging.Type) -> (Swift.String, any GlobalNetworking.Endpoint, Foundation.Data?) -> GlobalNetworking.ResponseLogging",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, any GlobalNetworking.Endpoint, Foundation.Data?) -> GlobalNetworking.ResponseLogging",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResponseLogging",
-                        "printedName": "GlobalNetworking.ResponseLogging",
-                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(reason: Swift.String, endpoint: any GlobalNetworking.Endpoint, data: Foundation.Data?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Endpoint",
-                            "printedName": "any GlobalNetworking.Endpoint",
-                            "usr": "s:16GlobalNetworking8EndpointP"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.Data?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Data",
-                                "printedName": "Foundation.Data",
-                                "usr": "s:10Foundation4DataV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GlobalNetworking.ResponseLogging.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResponseLogging",
-                        "printedName": "GlobalNetworking.ResponseLogging",
-                        "usr": "s:16GlobalNetworking15ResponseLoggingO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16GlobalNetworking15ResponseLoggingO7failureyACSS_AA8Endpoint_p10Foundation4DataVSgtcACmF",
-            "mangledName": "$s16GlobalNetworking15ResponseLoggingO7failureyACSS_AA8Endpoint_p10Foundation4DataVSgtcACmF",
-            "moduleName": "GlobalNetworking"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:16GlobalNetworking15ResponseLoggingO",
-        "mangledName": "$s16GlobalNetworking15ResponseLoggingO",
-        "moduleName": "GlobalNetworking",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GlobalNetworking",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "GlobalNetworking"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkManager",
-        "printedName": "NetworkManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(session:timeoutInterval:clientErrorType:errorStatusCodesToTrack:errorStatusCodeHandler:logger:successStatusCodes:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkManager",
-                "printedName": "GlobalNetworking.NetworkManager<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:16GlobalNetworking14NetworkManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URLSession",
-                "printedName": "Foundation.URLSession",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSURLSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ExistentialMetatype",
-                "printedName": "any GlobalNetworking.APIError.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "APIError",
-                    "printedName": "GlobalNetworking.APIError",
-                    "usr": "s:16GlobalNetworking8APIErrorP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkLoggerProtocol",
-                "printedName": "any GlobalNetworking.NetworkLoggerProtocol",
-                "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ClosedRange",
-                "printedName": "Swift.ClosedRange<Swift.Int>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SN"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
-            "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<τ_1_0, GlobalNetworking.APIClientError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "APIClientError",
-                    "printedName": "GlobalNetworking.APIClientError",
-                    "usr": "s:16GlobalNetworking14APIClientErrorO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_1_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<τ_1_0, GlobalNetworking.APIClientError>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<τ_1_0, GlobalNetworking.APIClientError>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "APIClientError",
-                        "printedName": "GlobalNetworking.APIClientError",
-                        "usr": "s:16GlobalNetworking14APIClientErrorO"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16GlobalNetworking14NetworkManagerC",
-        "mangledName": "$s16GlobalNetworking14NetworkManagerC",
-        "moduleName": "GlobalNetworking",
-        "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
-        "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "NetworkManagerProtocol",
-            "printedName": "NetworkManagerProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "EndpointItem",
-                "printedName": "EndpointItem",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GlobalNetworking",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "GlobalNetworking"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkManagerProtocol",
-        "printedName": "NetworkManagerProtocol",
-        "children": [
-          {
-            "kind": "AssociatedType",
-            "name": "EndpointItem",
-            "printedName": "EndpointItem",
-            "declKind": "AssociatedType",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
-            "moduleName": "GlobalNetworking",
-            "protocolReq": true
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<τ_1_0, GlobalNetworking.APIClientError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "APIClientError",
-                    "printedName": "GlobalNetworking.APIClientError",
-                    "usr": "s:16GlobalNetworking14APIClientErrorO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_1_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:responseType:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_1_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<τ_1_0, GlobalNetworking.APIClientError>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<τ_1_0, GlobalNetworking.APIClientError>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "APIClientError",
-                        "printedName": "GlobalNetworking.APIClientError",
-                        "usr": "s:16GlobalNetworking14APIClientErrorO"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
-        "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP",
-        "moduleName": "GlobalNetworking",
-        "genericSig": "<τ_0_0.EndpointItem : GlobalNetworking.Endpoint>",
-        "sugared_genericSig": "<Self.EndpointItem : GlobalNetworking.Endpoint>",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "ParameterEncoding",
         "printedName": "ParameterEncoding",
@@ -2470,6 +2652,26 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GlobalNetworking",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -3442,30 +3644,30 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1345,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "Array",
       "offset": 1430,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 1601,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1589,
+      "offset": 1607,
       "length": 3,
       "value": "209"
     },
