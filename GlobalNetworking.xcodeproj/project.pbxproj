@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,7 +26,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		25DE316F2D57BB280057EE9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		25DE316F2D57BB280057EE9C /* Exceptions for "GlobalNetworking" folder in "GlobalNetworking" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				GlobalNetworking.h,
@@ -36,8 +36,19 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		25DE315F2D57BB280057EE9C /* GlobalNetworking */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (25DE316F2D57BB280057EE9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = GlobalNetworking; sourceTree = "<group>"; };
-		25DE316B2D57BB280057EE9C /* GlobalNetworkingTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GlobalNetworkingTests; sourceTree = "<group>"; };
+		25DE315F2D57BB280057EE9C /* GlobalNetworking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				25DE316F2D57BB280057EE9C /* Exceptions for "GlobalNetworking" folder in "GlobalNetworking" target */,
+			);
+			path = GlobalNetworking;
+			sourceTree = "<group>";
+		};
+		25DE316B2D57BB280057EE9C /* GlobalNetworkingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GlobalNetworkingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +166,6 @@
 				};
 			};
 			buildConfigurationList = 25DE31572D57BB280057EE9C /* Build configuration list for PBXProject "GlobalNetworking" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -164,6 +174,7 @@
 			);
 			mainGroup = 25DE31532D57BB280057EE9C;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 25DE315E2D57BB280057EE9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
