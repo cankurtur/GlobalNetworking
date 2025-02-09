@@ -516,14 +516,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "NetworkManager",
-                "printedName": "GlobalNetworking.NetworkManager<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
+                "printedName": "GlobalNetworking.NetworkManager",
                 "usr": "s:16GlobalNetworking14NetworkManagerC"
               },
               {
@@ -619,11 +612,9 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACyxGSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
-            "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
             "declAttributes": [
               "AccessControl"
             ],
@@ -637,12 +628,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<τ_1_0, GlobalNetworking.APIClientError>",
+                "printedName": "Combine.AnyPublisher<τ_0_0, GlobalNetworking.APIClientError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
+                    "printedName": "τ_0_0"
                   },
                   {
                     "kind": "TypeNominal",
@@ -656,27 +647,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
+                "printedName": "τ_0_1"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Metatype",
-                "printedName": "τ_1_0.Type",
+                "printedName": "τ_0_0.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
+                    "printedName": "τ_0_0"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGx_qd__mtSeRd__lF",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyxAA14APIClientErrorOGq__xmtSeRzAA8EndpointR_r0_lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType7Combine12AnyPublisherVyxAA14APIClientErrorOGq__xmtSeRzAA8EndpointR_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Decodable, τ_0_1 : GlobalNetworking.Endpoint>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -693,32 +684,32 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
-                "printedName": "τ_1_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
               },
               {
                 "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Metatype",
-                "printedName": "τ_1_0.Type",
+                "printedName": "τ_0_0.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
+                    "printedName": "τ_0_0"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypeqd__x_qd__mtYaKSeRd__lF",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypexq__xmtYaKSeRzAA8EndpointR_r0_lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseTypexq__xmtYaKSeRzAA8EndpointR_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Decodable, τ_0_1 : GlobalNetworking.Endpoint>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -741,24 +732,24 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
+                "printedName": "τ_0_1"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Metatype",
-                "printedName": "τ_1_0.Type",
+                "printedName": "τ_0_0.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
+                    "printedName": "τ_0_0"
                   }
                 ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<τ_1_0, GlobalNetworking.APIClientError>) -> ()",
+                "printedName": "(Swift.Result<τ_0_0, GlobalNetworking.APIClientError>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -768,12 +759,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<τ_1_0, GlobalNetworking.APIClientError>",
+                    "printedName": "Swift.Result<τ_0_0, GlobalNetworking.APIClientError>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
+                        "printedName": "τ_0_0"
                       },
                       {
                         "kind": "TypeNominal",
@@ -788,11 +779,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyx_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyq__xmys6ResultOyxAA14APIClientErrorOGctSeRzAA8EndpointR_r0_lF",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7request8endpoint12responseType10completionyq__xmys6ResultOyxAA14APIClientErrorOGctSeRzAA8EndpointR_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.Endpoint, τ_1_0 : Swift.Decodable>",
-            "sugared_genericSig": "<EndpointItem, T where EndpointItem : GlobalNetworking.Endpoint, T : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Decodable, τ_0_1 : GlobalNetworking.Endpoint>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -806,8 +797,6 @@
         "usr": "s:16GlobalNetworking14NetworkManagerC",
         "mangledName": "$s16GlobalNetworking14NetworkManagerC",
         "moduleName": "GlobalNetworking",
-        "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
-        "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -832,20 +821,6 @@
             "kind": "Conformance",
             "name": "NetworkManagerProtocol",
             "printedName": "NetworkManagerProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "EndpointItem",
-                "printedName": "EndpointItem",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ]
-              }
-            ],
             "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
             "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP"
           }
@@ -874,16 +849,6 @@
         "printedName": "NetworkManagerProtocol",
         "children": [
           {
-            "kind": "AssociatedType",
-            "name": "EndpointItem",
-            "printedName": "EndpointItem",
-            "declKind": "AssociatedType",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP12EndpointItemQa",
-            "moduleName": "GlobalNetworking",
-            "protocolReq": true
-          },
-          {
             "kind": "Function",
             "name": "request",
             "printedName": "request(endpoint:responseType:)",
@@ -909,8 +874,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_1"
               },
               {
                 "kind": "TypeNominal",
@@ -926,10 +891,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOG12EndpointItemQz_qd__mtSeRd__lF",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGqd_0__qd__mtSeRd__AA8EndpointRd_0_r0_lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType7Combine12AnyPublisherVyqd__AA14APIClientErrorOGqd_0__qd__mtSeRd__AA8EndpointRd_0_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable, τ_1_1 : GlobalNetworking.Endpoint>",
             "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
@@ -947,8 +912,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_1"
               },
               {
                 "kind": "TypeNominal",
@@ -964,10 +929,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__12EndpointItemQz_qd__mtYaKSeRd__lF",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__qd_0__qd__mtYaKSeRd__AA8EndpointRd_0_r0_lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseTypeqd__qd_0__qd__mtYaKSeRd__AA8EndpointRd_0_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable, τ_1_1 : GlobalNetworking.Endpoint>",
             "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
             "protocolReq": true,
             "throwing": true,
@@ -986,8 +951,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EndpointItem"
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_1"
               },
               {
                 "kind": "TypeNominal",
@@ -1034,10 +999,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
-            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completiony12EndpointItemQz_qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__lF",
+            "usr": "s:16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completionyqd_0__qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__AA8EndpointRd_0_r0_lF",
+            "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP7request8endpoint12responseType10completionyqd_0__qd__mys6ResultOyqd__AA14APIClientErrorOGctSeRd__AA8EndpointRd_0_r0_lF",
             "moduleName": "GlobalNetworking",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : GlobalNetworking.NetworkManagerProtocol, τ_1_0 : Swift.Decodable, τ_1_1 : GlobalNetworking.Endpoint>",
             "sugared_genericSig": "<Self, T where Self : GlobalNetworking.NetworkManagerProtocol, T : Swift.Decodable>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
@@ -1048,8 +1013,6 @@
         "usr": "s:16GlobalNetworking22NetworkManagerProtocolP",
         "mangledName": "$s16GlobalNetworking22NetworkManagerProtocolP",
         "moduleName": "GlobalNetworking",
-        "genericSig": "<τ_0_0.EndpointItem : GlobalNetworking.Endpoint>",
-        "sugared_genericSig": "<Self.EndpointItem : GlobalNetworking.Endpoint>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -3646,28 +3609,28 @@
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1321,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "Array",
-      "offset": 1430,
+      "offset": 1406,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1601,
+      "offset": 1577,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1607,
+      "offset": 1583,
       "length": 3,
       "value": "209"
     },
