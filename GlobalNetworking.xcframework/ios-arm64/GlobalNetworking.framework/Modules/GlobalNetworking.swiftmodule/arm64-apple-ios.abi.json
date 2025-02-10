@@ -167,6 +167,13 @@
             "printedName": "NetworkLoggerProtocol",
             "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP",
             "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -288,6 +295,8 @@
         "usr": "s:16GlobalNetworking21NetworkLoggerProtocolP",
         "mangledName": "$s16GlobalNetworking21NetworkLoggerProtocolP",
         "moduleName": "GlobalNetworking",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -306,6 +315,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -511,7 +527,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(session:timeoutInterval:clientErrorType:errorStatusCodesToTrack:errorStatusCodeHandler:logger:successStatusCodes:)",
+            "printedName": "init(session:timeoutInterval:clientErrorType:logger:successStatusCodes:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -548,48 +564,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "NetworkLoggerProtocol",
                 "printedName": "any GlobalNetworking.NetworkLoggerProtocol",
                 "hasDefaultArg": true,
@@ -612,8 +586,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType23errorStatusCodesToTrack0kL11CodeHandler6logger07successlM0ACSo12NSURLSessionC_SdAA8APIError_pXpSaySiGySicSgAA0C14LoggerProtocol_pSNySiGtcfc",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
             "moduleName": "GlobalNetworking",
             "declAttributes": [
               "AccessControl"
@@ -3609,28 +3583,21 @@
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1321,
+      "offset": 826,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
-      "kind": "Array",
-      "offset": 1406,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1577,
+      "offset": 974,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1583,
+      "offset": 980,
       "length": 3,
       "value": "209"
     },
