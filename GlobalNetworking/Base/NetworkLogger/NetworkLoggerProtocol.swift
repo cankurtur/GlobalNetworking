@@ -8,7 +8,7 @@
 import Foundation
 
 /// Consumer needs to implement concrete type of `NetworkLoggerProtocol`.
-public protocol NetworkLoggerProtocol {
+public protocol NetworkLoggerProtocol: Sendable {
     /// Logs a cURL string representation of the given `URLRequest`.
     ///
     /// - Parameter urlRequest: The request to be logged in cURL format.

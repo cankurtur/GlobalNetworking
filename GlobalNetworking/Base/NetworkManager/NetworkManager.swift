@@ -20,37 +20,20 @@ public final class NetworkManager {
     /// Custom error type that provided by consumer.
     private let clientErrorType: APIError.Type
     
-    /// Contains specific error codes to notify consumers when request's status code is in the list.
-    /// Use `errorStatusCodeHandler` to listen these status codes in consumer side.
-    private let errorStatusCodesToTrack: [Int]
-    
-    /// Callback for `errorStatusCodesToTrack`.
-
-    private let errorStatusCodeHandler: ErrorStatusCodeHandler?
-    
     /// Logger for network errors and responses.
     private let logger: NetworkLoggerProtocol
     private let successStatusCodes: ClosedRange<Int>
-    
-    /// Default, single, decoder for all of the requests.
-    private lazy var decoder: JSONDecoder = {
-        return .init()
-    }()
     
     public init(
         session: URLSession = URLSession.shared,
         timeoutInterval: TimeInterval = 10,
         clientErrorType: APIError.Type,
-        errorStatusCodesToTrack: [Int] = [],
-        errorStatusCodeHandler: ErrorStatusCodeHandler? = nil,
         logger: NetworkLoggerProtocol = NetworkLogger(),
         successStatusCodes: ClosedRange<Int> = 200...209
     ) {
         self.session = session
         self.timeoutInterval = timeoutInterval
         self.clientErrorType = clientErrorType
-        self.errorStatusCodesToTrack = errorStatusCodesToTrack
-        self.errorStatusCodeHandler = errorStatusCodeHandler
         self.logger = logger
         self.successStatusCodes = successStatusCodes
     }
@@ -174,7 +157,7 @@ private extension NetworkManager {
         }
         
         do {
-            let decodedObject = try self.decoder.decode(responseType, from: data)
+            let decodedObject = try JSONDecoder().decode(responseType, from: data)
             return decodedObject
         } catch {
             let decodingError = APIClientError.decodingError(error: error as? DecodingError)
@@ -198,18 +181,14 @@ private extension NetworkManager {
             logger.logResponse(.failure(reason: APIClientError.timeout.debugMessage, endpoint: endpoint))
             return APIClientError.timeout
         }
-        
-        if let statusCode = response.code, errorStatusCodesToTrack.contains(statusCode) {
-            errorStatusCodeHandler?(statusCode)
-        }
-        
+
         do {
             guard let data = data else {
                 logger.logResponse(.failure(reason: APIClientError.networkError.debugMessage, endpoint: endpoint))
                 return APIClientError.networkError
             }
             
-            let clientError = try self.decoder.decode(self.clientErrorType, from: data)
+            let clientError = try JSONDecoder().decode(self.clientErrorType, from: data)
             clientError.statusCode = response.code
             logger.logResponse(.failure(reason: clientError.error, endpoint: endpoint, data: data))
             return APIClientError.handledError(error: clientError)
