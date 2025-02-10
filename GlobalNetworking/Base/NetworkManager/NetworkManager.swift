@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 /// Network manager that provides request methods for async/await, Combine, and callback-based API calls.
-public final class NetworkManager {
+public final class NetworkManager<EndpointItem: Endpoint> {
 
     /// Default, URLSession, for all of the requests.
     private let session: URLSession
@@ -47,7 +47,7 @@ extension NetworkManager: NetworkManagerProtocol {
     ///   - endpoint: The API endpoint to request.
     ///   - responseType: The expected response type, conforming to `Decodable`.
     /// - Returns: A publisher that emits the decoded response of type `T` or an `APIClientError`.
-    public func request<T>(endpoint: some Endpoint, responseType: T.Type) -> AnyPublisher<T, APIClientError> where T : Decodable {
+    public func request<T>(endpoint: EndpointItem, responseType: T.Type) -> AnyPublisher<T, APIClientError> where T : Decodable {
         logger.logRequest(endpoint)
         
         guard let request = RequestBuilder.makeRequest(for: endpoint, timeoutInterval: timeoutInterval) else {
@@ -89,7 +89,7 @@ extension NetworkManager: NetworkManagerProtocol {
     ///   - responseType: The expected response type, conforming to `Decodable`.
     /// - Returns: A decoded response of type `T`.
     /// - Throws: An `APIClientError` if the request fails.
-    public func request<T>(endpoint: some Endpoint, responseType: T.Type) async throws -> T where T : Decodable {
+    public func request<T>(endpoint: EndpointItem, responseType: T.Type) async throws -> T where T : Decodable {
         logger.logRequest(endpoint)
         
         guard let request = RequestBuilder.makeRequest(for: endpoint, timeoutInterval: timeoutInterval) else {
@@ -124,7 +124,7 @@ extension NetworkManager: NetworkManagerProtocol {
     ///   - endpoint: The API endpoint to request.
     ///   - responseType: The expected response type, conforming to `Decodable`.
     ///   - completion: A completion handler that returns a `Result` containing either the decoded response or an `APIClientError`.
-    public func request<T>(endpoint: some Endpoint, responseType: T.Type, completion: @escaping NetworkHandler<T>) where T : Decodable {
+    public func request<T>(endpoint: EndpointItem, responseType: T.Type, completion: @escaping NetworkHandler<T>) where T : Decodable {
         Task {
             do {
                 let response = try await request(endpoint: endpoint, responseType: responseType)
@@ -147,7 +147,7 @@ extension NetworkManager: NetworkManagerProtocol {
 private extension NetworkManager {
     func handleSucceedRequest<T: Decodable>(
         data: Data,
-        endpoint: some Endpoint,
+        endpoint: EndpointItem,
         responseType: T.Type
     ) throws -> T where T : Decodable {
         logger.logResponse(.success(data: data, endpoint: endpoint))
@@ -175,7 +175,7 @@ private extension NetworkManager {
     func handleFailedRequest(
         response: URLResponse,
         data: Data?,
-        endpoint: some Endpoint
+        endpoint: EndpointItem
     ) -> APIClientError {
         guard response.code != NSURLErrorTimedOut else {
             logger.logResponse(.failure(reason: APIClientError.timeout.debugMessage, endpoint: endpoint))
