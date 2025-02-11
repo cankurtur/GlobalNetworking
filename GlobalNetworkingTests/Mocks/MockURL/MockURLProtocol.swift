@@ -9,12 +9,10 @@ import Foundation
 
 class MockURLProtocol: URLProtocol {
     static var requestHandler: ((URLRequest) throws -> (HTTPURLResponse, Data?))?
-    static var requestFailed = false
     static var connectionFailed = false
     
     static func resetMockData() {
         requestHandler = nil
-        requestFailed = false
         connectionFailed = false
     }
     
@@ -54,11 +52,7 @@ class MockURLProtocol: URLProtocol {
             
             let (response, data) = try handler(request)
             
-            if MockURLProtocol.requestFailed {
-                client?.urlProtocol(self, didReceive: URLResponse(), cacheStoragePolicy: .notAllowed)
-            } else {
-                client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
-            }
+            client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
             
             if let data = data {
                 client?.urlProtocol(self, didLoad: data)
