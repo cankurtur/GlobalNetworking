@@ -12,7 +12,7 @@ import Combine
 public final class NetworkManager<EndpointItem: Endpoint> {
 
     /// Default, URLSession, for all of the requests.
-    private let session: URLSession
+    private let session: URLSessionProtocol
     
     /// Timeout interval per each request.
     private let timeoutInterval: TimeInterval
@@ -25,7 +25,7 @@ public final class NetworkManager<EndpointItem: Endpoint> {
     private let successStatusCodes: ClosedRange<Int>
     
     public init(
-        session: URLSession = URLSession.shared,
+        session: URLSessionProtocol = URLSession.shared,
         timeoutInterval: TimeInterval = 10,
         clientErrorType: APIError.Type,
         logger: NetworkLoggerProtocol = NetworkLogger(),
@@ -62,9 +62,7 @@ extension NetworkManager: NetworkManagerProtocol {
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response in
                 
-                guard let statusCode = response.code else {
-                    throw APIClientError.invalidStatusCode
-                }
+                let statusCode = response.code
                 
                 if self.successStatusCodes.contains(statusCode) {
                     return try self.handleSucceedRequest(data: data, endpoint: endpoint, responseType: responseType)
@@ -101,9 +99,7 @@ extension NetworkManager: NetworkManagerProtocol {
         do {
             let (data, response) = try await session.data(for: request)
             
-            guard let statusCode = response.code else {
-                throw APIClientError.invalidStatusCode
-            }
+            let statusCode = response.code
             
             if successStatusCodes.contains(statusCode) {
                 return try handleSucceedRequest(data: data, endpoint: endpoint, responseType: responseType)
@@ -174,7 +170,7 @@ private extension NetworkManager {
     /// - Returns: Generic APIClientError for all of the consumers
     func handleFailedRequest(
         response: URLResponse,
-        data: Data?,
+        data: Data,
         endpoint: EndpointItem
     ) -> APIClientError {
         guard response.code != NSURLErrorTimedOut else {
@@ -183,11 +179,6 @@ private extension NetworkManager {
         }
 
         do {
-            guard let data = data else {
-                logger.logResponse(.failure(reason: APIClientError.networkError.debugMessage, endpoint: endpoint))
-                return APIClientError.networkError
-            }
-            
             let clientError = try JSONDecoder().decode(self.clientErrorType, from: data)
             clientError.statusCode = response.code
             logger.logResponse(.failure(reason: clientError.error, endpoint: endpoint, data: data))

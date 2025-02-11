@@ -19,7 +19,6 @@ public enum APIClientError: Error {
     case networkError
     case decodingError(error: DecodingError?)
     case timeout
-    case invalidStatusCode
     case badRequest
     
     /// Human readable error message.
@@ -33,8 +32,6 @@ public enum APIClientError: Error {
             return "Failed to decode response"
         case .timeout:
             return "Request timed out"
-        case .invalidStatusCode:
-            return "Invalid response from server"
         case .badRequest:
             return "Bad request"
         }
@@ -52,8 +49,6 @@ public enum APIClientError: Error {
             return "Decoding Error: \(decodingError)"
         case .timeout:
             return "Timeout"
-        case .invalidStatusCode:
-            return "Invalid status code"
         case .badRequest:
             return "Bad request"
         }
@@ -70,8 +65,6 @@ public enum APIClientError: Error {
             return NSURLErrorCannotDecodeRawData
         case .timeout:
             return NSURLErrorTimedOut
-        case .invalidStatusCode:
-            return 0
         case .badRequest:
             return 400
         }
