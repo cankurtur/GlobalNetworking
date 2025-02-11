@@ -26,6 +26,15 @@ final class RequestBuilderGetRequestTests: XCTestCase {
         var method: HTTPMethod {
             return .get
         }
+        
+        var params: [String : Any]? {
+            switch self {
+            case .fetchSomething:
+                return ["id":"1"]
+            case .fetchSomethingTwo:
+                return nil
+            }
+        }
     }
 
     func test_request_with_params_in_path() {
@@ -36,7 +45,7 @@ final class RequestBuilderGetRequestTests: XCTestCase {
         
         XCTAssertNotNil(request)
         XCTAssertEqual(request?.timeoutInterval, 10)
-        XCTAssertEqual(request?.url?.absoluteString, "http://localhost:8000/something")
+        XCTAssertEqual(request?.url?.absoluteString, "http://localhost:8000/something?id=1")
         XCTAssertEqual(request?.httpMethod, HTTPMethod.get.rawValue)
     }
     

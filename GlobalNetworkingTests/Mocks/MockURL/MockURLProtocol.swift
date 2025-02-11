@@ -11,20 +11,27 @@ class MockURLProtocol: URLProtocol {
     static var requestHandler: ((URLRequest) throws -> (HTTPURLResponse, Data?))?
     static var connectionFailed = false
     
+    /// Reset mock data.
     static func resetMockData() {
         requestHandler = nil
         connectionFailed = false
     }
     
-    /// Fatal error avoiding.
-    static func populateRequestHandler() {
+    /// Create request handler.
+    static func createRequestHandler(
+        urlString: String,
+        statusCode: Int,
+        httpVersion: String? = nil,
+        headerFields: [String: String]? = nil,
+        data: Data?
+    ) {
         requestHandler = { request in
             let response = HTTPURLResponse(
-                url: URL(string: "http://localhost:8000")!,
-                statusCode: 0,
-                httpVersion: nil,
-                headerFields: nil)!
-            return (response, Data())
+                url: URL(string: urlString)!,
+                statusCode: statusCode,
+                httpVersion: httpVersion,
+                headerFields: headerFields)!
+            return (response, data)
         }
     }
     

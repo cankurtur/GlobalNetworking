@@ -27,3 +27,20 @@ enum MockClientEndpointItem: Endpoint {
         }
     }
 }
+
+// To test Bad Request error on network manager.
+enum MockClientBrokenEndpointItem: Endpoint {
+    case getRoot
+    
+    var path: String {
+        return ""
+    }
+    
+    var method: HTTPMethod {
+        return .get
+    }
+    
+    var baseUrl: String {
+        return "h t t p://localhost:8000"
+    }
+}
