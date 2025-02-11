@@ -544,10 +544,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "URLSession",
-                "printedName": "Foundation.URLSession",
+                "name": "URLSessionProtocol",
+                "printedName": "any GlobalNetworking.URLSessionProtocol",
                 "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSURLSession"
+                "usr": "s:16GlobalNetworking18URLSessionProtocolP"
               },
               {
                 "kind": "TypeNominal",
@@ -593,8 +593,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
-            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
+            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGAA18URLSessionProtocol_p_SdAA8APIError_pXpAA0c6LoggerP0_pSNySiGtcfc",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGAA18URLSessionProtocol_p_SdAA8APIError_pXpAA0c6LoggerP0_pSNySiGtcfc",
             "moduleName": "GlobalNetworking",
             "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
             "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
@@ -1024,6 +1024,107 @@
         "moduleName": "GlobalNetworking",
         "genericSig": "<τ_0_0.EndpointItem : GlobalNetworking.Endpoint>",
         "sugared_genericSig": "<Self.EndpointItem : GlobalNetworking.Endpoint>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionProtocol",
+        "printedName": "URLSessionProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dataTaskPublisher",
+            "printedName": "dataTaskPublisher(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTaskPublisher",
+                "printedName": "Foundation.URLSession.DataTaskPublisher",
+                "usr": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking18URLSessionProtocolP17dataTaskPublisher3forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "mangledName": "$s16GlobalNetworking18URLSessionProtocolP17dataTaskPublisher3forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.URLSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : GlobalNetworking.URLSessionProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "data",
+            "printedName": "data(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GlobalNetworking18URLSessionProtocolP4data3for10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_tYaKF",
+            "mangledName": "$s16GlobalNetworking18URLSessionProtocolP4data3for10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_tYaKF",
+            "moduleName": "GlobalNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.URLSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : GlobalNetworking.URLSessionProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16GlobalNetworking18URLSessionProtocolP",
+        "mangledName": "$s16GlobalNetworking18URLSessionProtocolP",
+        "moduleName": "GlobalNetworking",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -2034,43 +2135,6 @@
             "declKind": "EnumElement",
             "usr": "s:16GlobalNetworking14APIClientErrorO7timeoutyA2CmF",
             "mangledName": "$s16GlobalNetworking14APIClientErrorO7timeoutyA2CmF",
-            "moduleName": "GlobalNetworking"
-          },
-          {
-            "kind": "Var",
-            "name": "invalidStatusCode",
-            "printedName": "invalidStatusCode",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GlobalNetworking.APIClientError.Type) -> GlobalNetworking.APIClientError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "APIClientError",
-                    "printedName": "GlobalNetworking.APIClientError",
-                    "usr": "s:16GlobalNetworking14APIClientErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GlobalNetworking.APIClientError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "APIClientError",
-                        "printedName": "GlobalNetworking.APIClientError",
-                        "usr": "s:16GlobalNetworking14APIClientErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16GlobalNetworking14APIClientErrorO17invalidStatusCodeyA2CmF",
-            "mangledName": "$s16GlobalNetworking14APIClientErrorO17invalidStatusCodeyA2CmF",
             "moduleName": "GlobalNetworking"
           },
           {
@@ -3612,6 +3676,110 @@
             "mangledName": "$sSH"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "URLSessionProtocol",
+            "printedName": "URLSessionProtocol",
+            "usr": "s:16GlobalNetworking18URLSessionProtocolP",
+            "mangledName": "$s16GlobalNetworking18URLSessionProtocolP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -3620,21 +3788,21 @@
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 850,
+      "offset": 866,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 998,
+      "offset": 1014,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1020,
       "length": 3,
       "value": "209"
     },
