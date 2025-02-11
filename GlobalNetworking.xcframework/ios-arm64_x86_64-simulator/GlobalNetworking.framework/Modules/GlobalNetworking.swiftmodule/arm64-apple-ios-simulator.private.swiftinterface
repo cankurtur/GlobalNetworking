@@ -27,7 +27,11 @@ public enum ResponseLogging {
   case failure(reason: Swift.String, endpoint: any GlobalNetworking.Endpoint, data: Foundation.Data? = nil)
 }
 final public class NetworkManager<EndpointItem> where EndpointItem : GlobalNetworking.Endpoint {
+<<<<<<< HEAD
   public init(session: any GlobalNetworking.URLSessionProtocol = URLSession.shared, timeoutInterval: Foundation.TimeInterval = 10, clientErrorType: any GlobalNetworking.APIError.Type, logger: any GlobalNetworking.NetworkLoggerProtocol = NetworkLogger(), successStatusCodes: Swift.ClosedRange<Swift.Int> = 200...209)
+=======
+  public init(session: Foundation.URLSession = URLSession.shared, timeoutInterval: Foundation.TimeInterval = 10, clientErrorType: any GlobalNetworking.APIError.Type, logger: any GlobalNetworking.NetworkLoggerProtocol = NetworkLogger(), successStatusCodes: Swift.ClosedRange<Swift.Int> = 200...209)
+>>>>>>> main
   @objc deinit
 }
 extension GlobalNetworking.NetworkManager : GlobalNetworking.NetworkManagerProtocol {
@@ -40,12 +44,15 @@ public protocol NetworkManagerProtocol {
   func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) -> Combine.AnyPublisher<T, GlobalNetworking.APIClientError> where T : Swift.Decodable
   func request<T>(endpoint: Self.EndpointItem, responseType: T.Type) async throws -> T where T : Swift.Decodable
   func request<T>(endpoint: Self.EndpointItem, responseType: T.Type, completion: @escaping GlobalNetworking.NetworkHandler<T>) where T : Swift.Decodable
+<<<<<<< HEAD
 }
 public protocol URLSessionProtocol {
   func dataTaskPublisher(for request: Foundation.URLRequest) -> Foundation.URLSession.DataTaskPublisher
   func data(for request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
 }
 extension Foundation.URLSession : GlobalNetworking.URLSessionProtocol {
+=======
+>>>>>>> main
 }
 public protocol Endpoint : Swift.CustomStringConvertible {
   var baseUrl: Swift.String { get }

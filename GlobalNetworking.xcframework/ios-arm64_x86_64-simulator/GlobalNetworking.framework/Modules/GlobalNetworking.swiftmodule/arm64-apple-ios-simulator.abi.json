@@ -593,8 +593,13 @@
               }
             ],
             "declKind": "Constructor",
+<<<<<<< HEAD
             "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGAA18URLSessionProtocol_p_SdAA8APIError_pXpAA0c6LoggerP0_pSNySiGtcfc",
             "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGAA18URLSessionProtocol_p_SdAA8APIError_pXpAA0c6LoggerP0_pSNySiGtcfc",
+=======
+            "usr": "s:16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
+            "mangledName": "$s16GlobalNetworking14NetworkManagerC7session15timeoutInterval15clientErrorType6logger18successStatusCodesACyxGSo12NSURLSessionC_SdAA8APIError_pXpAA0C14LoggerProtocol_pSNySiGtcfc",
+>>>>>>> main
             "moduleName": "GlobalNetworking",
             "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.Endpoint>",
             "sugared_genericSig": "<EndpointItem where EndpointItem : GlobalNetworking.Endpoint>",
@@ -1024,6 +1029,7 @@
         "moduleName": "GlobalNetworking",
         "genericSig": "<τ_0_0.EndpointItem : GlobalNetworking.Endpoint>",
         "sugared_genericSig": "<Self.EndpointItem : GlobalNetworking.Endpoint>",
+<<<<<<< HEAD
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -1125,6 +1131,8 @@
         "usr": "s:16GlobalNetworking18URLSessionProtocolP",
         "mangledName": "$s16GlobalNetworking18URLSessionProtocolP",
         "moduleName": "GlobalNetworking",
+=======
+>>>>>>> main
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -3788,21 +3796,33 @@
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 866,
+=======
+      "offset": 850,
+>>>>>>> main
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 1014,
+=======
+      "offset": 998,
+>>>>>>> main
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 1020,
+=======
+      "offset": 1004,
+>>>>>>> main
       "length": 3,
       "value": "209"
     },
