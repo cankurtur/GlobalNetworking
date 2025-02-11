@@ -1,0 +1,29 @@
+//
+//  MockClientEndpointItem.swift
+//  GlobalNetworking
+//
+//  Created by Can Kurtur on 11.02.2025.
+//
+
+import GlobalNetworking
+
+enum MockClientEndpointItem: Endpoint {
+    case getRoot
+    case getResponseCode(_ path: String)
+    
+    var path: String {
+        switch self {
+        case .getRoot:
+            return ""
+        case .getResponseCode(let path):
+            return path
+        }
+    }
+    
+    var method: HTTPMethod {
+        switch self {
+        case .getRoot, .getResponseCode:
+            return .get
+        }
+    }
+}

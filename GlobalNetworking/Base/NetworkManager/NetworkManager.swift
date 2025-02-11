@@ -12,7 +12,7 @@ import Combine
 public final class NetworkManager<EndpointItem: Endpoint> {
 
     /// Default, URLSession, for all of the requests.
-    private let session: URLSession
+    private let session: URLSessionProtocol
     
     /// Timeout interval per each request.
     private let timeoutInterval: TimeInterval
@@ -25,7 +25,7 @@ public final class NetworkManager<EndpointItem: Endpoint> {
     private let successStatusCodes: ClosedRange<Int>
     
     public init(
-        session: URLSession = URLSession.shared,
+        session: URLSessionProtocol = URLSession.shared,
         timeoutInterval: TimeInterval = 10,
         clientErrorType: APIError.Type,
         logger: NetworkLoggerProtocol = NetworkLogger(),
