@@ -67,8 +67,8 @@ final class YourClass {
 
 #### Parameters
 
-`clientErrorType`: Your custom error type that handles API errors
-`logger`: Custom logger instance for network request logging
+- `clientErrorType`: Your custom error type that handles API errors
+- `logger`: Custom logger instance for network request logging
 
 ### Network Logger
 
