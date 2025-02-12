@@ -61,11 +61,11 @@ final class YourClass {
 
 ```
 
-Generic Type
+#### Generic Type
 
 `NetworkManager<YourEndpointItem>` requires your custom endpoint type that conforms to the `Endpoint` protocol.
 
-Parameters
+#### Parameters
 
 `clientErrorType`: Your custom error type that handles API errors
 `logger`: Custom logger instance for network request logging
