@@ -27,13 +27,16 @@ The `GlobalNetworking` framework provides functionality for handling network req
 
 ### Supporting
 
-In `NetworkManagerProcol`, there are three types of functions. You can use any of them in your project.
+`NetworkManagerProcol` is a Swift protocol that defines a contract for network management operations. It provides three different approaches to handle network requests: Combine-based, async/await, and completion handler-based implementations.
+
+The `EndpointItem` associated type must conform to the `Endpoint` protocol. It defines the type of endpoint used for network requests, allowing implementations to specify their own endpoint type while maintaining type safety.
 
 ```swift
 public protocol NetworkManagerProtocol {
-    func request<T: Decodable>(endpoint: some Endpoint, responseType: T.Type) -> AnyPublisher<T, APIClientError>
-    func request<T: Decodable>(endpoint: some Endpoint, responseType: T.Type) async throws -> T
-    func request<T: Decodable>(endpoint: some Endpoint, responseType: T.Type, completion: @escaping NetworkHandler<T>)
+    associatedtype EndpointItem: Endpoint
+    func request<T: Decodable>(endpoint: EndpointItem, responseType: T.Type) -> AnyPublisher<T, APIClientError>
+    func request<T: Decodable>(endpoint: EndpointItem, responseType: T.Type) async throws -> T
+    func request<T: Decodable>(endpoint: EndpointItem, responseType: T.Type, completion: @escaping NetworkHandler<T>)
 }
 ```
 
@@ -47,25 +50,25 @@ public protocol NetworkManagerProtocol {
 
 ### Creating Instance
 
+The NetworkManager is typically initialized as a private property in your class:
+
 ```swift
 import GlobalNetworking
 
 final class YourClass {
-    private let networkManager: NetworkManagerProtocol
-    
-    init(networkManager: NetworkManagerProtocol = NetworkManager(clientErrorType: ClientError.self,logger: YourLogger()) ) {
-        self.networkManager = networkManager
-    }
+        private let networkManager = NetworkManager<YourEndpointItem>(clientErrorType: ClientError.self, logger: YourLogger())
 }
 
 ```
-The `YourClass` class is an example of how to use the `NetworkManagerProtocol` provided by the `GlobalNetworking` framework. It has a private property called networkManager, which is of type `NetworkManagerProtocol`.
 
-The `YourClass` class also has an initializer that takes an optional parameter of type `NetworkManagerProtocol`, which defaults to a new `NetworkManager` instance with a `ClientError` type.
+Generic Type
 
-The `YourLogger` class is a logger that conforms to `NetworkLoggerProtocol` to log requests, curl strings, responses, and errors. If you don’t provide a logger, the default logger will be implemented by `GlobalNetworking`.
+`NetworkManager<YourEndpointItem>` requires your custom endpoint type that conforms to the `Endpoint` protocol.
 
-This class can be used as a starting point for implementing network functionality in an application.
+Parameters
+
+`clientErrorType`: Your custom error type that handles API errors
+`logger`: Custom logger instance for network request logging
 
 ### Network Logger
 
@@ -186,8 +189,3 @@ struct YourResponse: Codable {
 ## Licence
 
 `GlobalNetworking` is available under the MIT license. See the LICENSE file for more info.
-
-
-
-
-
