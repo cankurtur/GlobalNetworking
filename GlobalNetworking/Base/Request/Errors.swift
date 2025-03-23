@@ -9,7 +9,7 @@ import Foundation
 
 /// Generic error type for networking layer. You can define your own error type by conforming to this protocol.
 public protocol APIError: Codable, AnyObject {
-    var error: String { get }
+    var message: String { get }
     var statusCode: Int? { get set }
 }
 
@@ -25,7 +25,7 @@ public enum APIClientError: Error {
     public var message: String {
         switch self {
         case .handledError(let error):
-            return error.error
+            return error.message
         case .networkError:
             return "Could not connect to the server"
         case .decodingError:
@@ -41,7 +41,7 @@ public enum APIClientError: Error {
     public var debugMessage: String {
         switch self {
         case .handledError(let error):
-            return error.error
+            return error.message
         case .networkError:
             return "Network error"
         case .decodingError(let error):
