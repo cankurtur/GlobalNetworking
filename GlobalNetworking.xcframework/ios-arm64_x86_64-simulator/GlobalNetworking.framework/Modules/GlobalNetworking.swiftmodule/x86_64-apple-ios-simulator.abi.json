@@ -1739,8 +1739,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "error",
-            "printedName": "error",
+            "name": "message",
+            "printedName": "message",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1750,8 +1750,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16GlobalNetworking8APIErrorP5errorSSvp",
-            "mangledName": "$s16GlobalNetworking8APIErrorP5errorSSvp",
+            "usr": "s:16GlobalNetworking8APIErrorP7messageSSvp",
+            "mangledName": "$s16GlobalNetworking8APIErrorP7messageSSvp",
             "moduleName": "GlobalNetworking",
             "protocolReq": true,
             "accessors": [
@@ -1768,8 +1768,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16GlobalNetworking8APIErrorP5errorSSvg",
-                "mangledName": "$s16GlobalNetworking8APIErrorP5errorSSvg",
+                "usr": "s:16GlobalNetworking8APIErrorP7messageSSvg",
+                "mangledName": "$s16GlobalNetworking8APIErrorP7messageSSvg",
                 "moduleName": "GlobalNetworking",
                 "genericSig": "<τ_0_0 where τ_0_0 : GlobalNetworking.APIError>",
                 "sugared_genericSig": "<Self where Self : GlobalNetworking.APIError>",
@@ -3786,98 +3786,98 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1014,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/Base\/NetworkManager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1020,
       "length": 3,
       "value": "209"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPHeaders.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPHeaders.swift",
       "kind": "Dictionary",
       "offset": 184,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 612,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 790,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 874,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 961,
       "length": 7,
       "value": "\"QUERY\""
     },
     {
-      "filePath": "\/Users\/cankurtur\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
+      "filePath": "\/Users\/cankurtur\/Documents\/iOS\/Global\/GlobalNetworking\/GlobalNetworking\/HTTP\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 1050,
       "length": 7,

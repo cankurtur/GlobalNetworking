@@ -181,7 +181,7 @@ private extension NetworkManager {
         do {
             let clientError = try JSONDecoder().decode(self.clientErrorType, from: data)
             clientError.statusCode = response.code
-            logger.logResponse(.failure(reason: clientError.error, endpoint: endpoint, data: data))
+            logger.logResponse(.failure(reason: clientError.message, endpoint: endpoint, data: data))
             return APIClientError.handledError(error: clientError)
         } catch {
             let decodingError = APIClientError.decodingError(error: error as? DecodingError)
