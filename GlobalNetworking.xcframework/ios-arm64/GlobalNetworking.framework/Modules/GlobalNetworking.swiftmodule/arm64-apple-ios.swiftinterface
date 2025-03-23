@@ -69,7 +69,7 @@ extension GlobalNetworking.Endpoint {
   }
 }
 public protocol APIError : AnyObject, Swift.Decodable, Swift.Encodable {
-  var error: Swift.String { get }
+  var message: Swift.String { get }
   var statusCode: Swift.Int? { get set }
 }
 public enum APIClientError : Swift.Error {
