@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -9,10 +9,17 @@ let package = Package(
     products: [
         .library(
             name: "GlobalNetworking",
-            targets: ["GlobalNetworking"])
+            targets: ["GlobalNetworking"]
+        )
     ],
     targets: [
-        .binaryTarget(
+        .target(
             name: "GlobalNetworking",
-            path: "GlobalNetworking.xcframework")
-    ])
+            dependencies: []
+        ),
+        .testTarget(
+            name: "GlobalNetworkingTests",
+            dependencies: ["GlobalNetworking"]
+        )
+    ]
+)
