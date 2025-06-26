@@ -25,22 +25,9 @@
 		25DE31672D57BB280057EE9C /* GlobalNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobalNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		25DE316F2D57BB280057EE9C /* Exceptions for "GlobalNetworking" folder in "GlobalNetworking" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				GlobalNetworking.h,
-			);
-			target = 25DE315C2D57BB280057EE9C /* GlobalNetworking */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		25DE315F2D57BB280057EE9C /* GlobalNetworking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				25DE316F2D57BB280057EE9C /* Exceptions for "GlobalNetworking" folder in "GlobalNetworking" target */,
-			);
 			path = GlobalNetworking;
 			sourceTree = "<group>";
 		};
@@ -350,7 +337,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -412,7 +399,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
