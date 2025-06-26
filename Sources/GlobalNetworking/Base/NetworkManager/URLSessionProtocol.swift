@@ -5,6 +5,8 @@
 //  Created by Can Kurtur on 11.02.2025.
 //
 
+import UIKit
+
 /// Conform this protocol to mock URLSession.
 public protocol URLSessionProtocol {
     func dataTaskPublisher(for request: URLRequest) -> URLSession.DataTaskPublisher

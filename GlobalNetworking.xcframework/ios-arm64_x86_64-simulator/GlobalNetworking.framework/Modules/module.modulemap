@@ -1,6 +1,0 @@
-framework module GlobalNetworking {
-  umbrella header "GlobalNetworking.h"
-  export *
-
-  module * { export * }
-}
